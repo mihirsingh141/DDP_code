@@ -53,6 +53,8 @@ Execute all cells (ensure dependencies are installed).
 Visual outputs and evaluation metrics will be shown inline.
 
 ### 📁 Directory Structure
+<details> <summary><strong>📁 Project Directory Structure</strong></summary>
+
 
 final_ddp_code/
 │
