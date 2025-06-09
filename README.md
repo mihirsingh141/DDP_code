@@ -52,33 +52,6 @@ Execute all cells (ensure dependencies are installed).
 
 Visual outputs and evaluation metrics will be shown inline.
 
-### 📁 Directory Structure
-<details> <summary><strong>📁 Project Directory Structure</strong></summary>
-
-
-final_ddp_code/
-│
-├── main_lagan.py            # Main file for LieGAN training and dataset generation
-├── train.py                 # Training loop for LaLiGAN-based models
-├── utils.py                 # Utility functions
-├── req.txt                  # Required Python dependencies
-│
-├── Notebooks/               # Jupyter notebooks for evaluation
-│
-├── Data/                    # Generated datasets stored as .pkl files
-│
-├── saved_model/             # Trained model checkpoints
-│   ├── LaLiGAN/             # Models trained using LaLiGAN
-│   │   ├── EMLP/            # EMLP-based LaLiGAN models
-│   │   └── vanilla/         # Vanilla models trained with LaLiGAN
-│   └── LieGAN/              # LieGAN generators and discriminators
-│
-└── src/                     # Source code for model definitions
-    ├── MLP/                 # MLP models (vanilla and equivariant)
-    ├── LSTM/                # LSTM models
-    ├── HNN/                 # Hamiltonian Neural Networks
-    └── EMLP/                # Equivariant MLP architectures
-</details>
 
 ### 🧠 Model Definitions
 The src/ directory contains implementations of the following models:
@@ -136,18 +109,18 @@ regressor_499.pt
 ♻️ Reproducibility
 Install dependencies:
 
-bash
-Copy
-Edit
+```bash
 pip install -r req.txt
+```
+
 To reproduce results:
 
 Generate data and discover symmetries:
 
-bash
-Copy
-Edit
+```bash
 python main_lagan.py --num_epochs 100 --task "{task_name}"
+```
+
 Run any of the result notebooks:
 
 Examples:
@@ -158,23 +131,8 @@ Notebooks/pendulum_liegan.ipynb
 
 Use the saved models and datasets in the Data/ and saved_model/ folders.
 
-📜 License
-This repository is part of an academic thesis and is currently licensed for research use only. For commercial or public use, please contact the author.
 
 👤 Author
 Mihir Singh
-Department of Data Science
 Indian Institute of Technology Madras
 
-yaml
-Copy
-Edit
-
----
-
-✅ Let me know if you’d like to add:
-- A LaTeX-formatted citation block
-- A `requirements.txt` preview
-- Example results or figures in Markdown
-
-I'm happy to format those too.
