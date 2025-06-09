@@ -53,9 +53,7 @@ Execute all cells (ensure dependencies are installed).
 Visual outputs and evaluation metrics will be shown inline.
 
 ### 📁 Directory Structure
-graphql
-Copy
-Edit
+
 final_ddp_code/
 │
 ├── main_lagan.py            # Main file for LieGAN training and dataset generation
@@ -78,6 +76,7 @@ final_ddp_code/
     ├── LSTM/                # LSTM models
     ├── HNN/                 # Hamiltonian Neural Networks
     └── EMLP/                # Equivariant MLP architectures
+</details>
 
 ### 🧠 Model Definitions
 The src/ directory contains implementations of the following models:
