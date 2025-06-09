@@ -10,6 +10,7 @@ To generate datasets and discover symmetry generators using the LieGAN architect
 
 ```bash
 python main_lagan.py --num_epochs 100 --task "{task_name}"
+```
 
 
 Replace {task_name} with the physical system of interest, such as:
@@ -30,7 +31,7 @@ Train the LieGAN generator and discriminator.
 
 Discover Lie algebra symmetry generators.
 
-Save the generated data and trained models to appropriate folders.
+Save the generated data and trained models to the appropriate folders.
 
 ### 📌 Step 2: Run Result Notebooks
 After generating data and training the LieGAN models, you can run the analysis and result notebooks independently.
